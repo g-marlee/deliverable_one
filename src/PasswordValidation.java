@@ -13,8 +13,8 @@ public class PasswordValidation {
 		System.out.println("At least one uppercase letter");
 		System.out.println("Minimum 7 characters");
 		System.out.println("Maximum 12 characters");
-		System.out.println("An exlcamation point (!)");
-		System.out.print("Please enter your passowrd: ");
+		System.out.println("An exclamation point (!)");
+		System.out.print("Please enter your password: ");
 		String password = input.nextLine();
 		
 			
@@ -32,14 +32,17 @@ public class PasswordValidation {
 						System.out.println("Password valid and accepted.");
 						check++;
 					} else {
+						System.out.println("Error");
 						System.out.print("Please enter a valid password: ");
 						password = input.nextLine();
 					}
 				} else {
+					System.out.println("Error");
 					System.out.print("Please enter a valid password: ");
 					password = input.nextLine();
 				}
 			} else {
+				System.out.println("Error");
 				System.out.print("Please enter a valid password: ");
 				password = input.nextLine();
 			}
